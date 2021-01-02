@@ -1,0 +1,14 @@
+@using System.Web.Optimization
+
+@{ ViewBag.Title = "Home Page"; }
+
+<div id="app" class="row" style="margin-top: 20px;">
+  <div class="text-center">
+    <robot-builder></robot-builder>
+  </div>
+</div>
+
+@section scripts {
+  @Scripts.Render("~/Scripts/bundle/home.js")
+  
+}
